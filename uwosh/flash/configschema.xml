@@ -1,0 +1,10 @@
+<schema>
+  
+    <key name="server_address" />
+    <key name="ftp_address" />
+    <key name="ftp_user" />
+    <key name="ftp_password" />
+    <key name="ftp_media_directory" />
+    <key name="ftp_use_passive_mode" datatype="boolean" />
+	
+</schema>

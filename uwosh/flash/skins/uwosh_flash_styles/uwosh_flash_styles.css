@@ -1,0 +1,16 @@
+/* Default size - will be adjusted to size of actual clip if available */
+
+button#kupu-imagelibdrawer-button{
+    background-image: url(++resource++flashimageicon.gif);
+    background-position:center center;
+}
+
+/* do not show flash on page by default
+since it is just a placed image */
+div#documentEditable img.flash{
+    display:none;
+}
+
+.kupu-html img.flashElement{
+    display:block;
+}

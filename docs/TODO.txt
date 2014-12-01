@@ -1,0 +1,6 @@
+* refactor for work with TinyMCE
+  * create tinymce plugin to handle it
+    --might be able to handle options for it even!
+
+* different video formats?
+    

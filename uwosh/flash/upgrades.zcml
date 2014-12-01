@@ -1,0 +1,23 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:gs="http://namespaces.zope.org/genericsetup"
+    i18n_domain="collective.plonetruegallery">
+        
+    <gs:upgradeStep
+        title="Upgrade uwosh.flash to 0.7rc2"
+        description="uwosh.flash upgrade step"
+        source="*"
+        destination="0.7rc2"
+        handler=".upgrades.upgrade_to_0_7rc2"
+        profile="uwosh.flash:default"
+    />
+    <gs:upgradeStep
+        title="Upgrade uwosh.flash to 0.7"
+        description="uwosh.flash upgrade step"
+        source="*"
+        destination="0.7"
+        handler=".upgrades.upgrade_to_0_7"
+        profile="uwosh.flash:default"
+    />
+               
+</configure>

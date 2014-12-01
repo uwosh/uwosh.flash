@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<import-steps>
+ <import-step id="uwosh.flash" version="1"
+              handler="uwosh.flash.exportimport.import_various"
+              title="Flash Kupu Additions">
+  <dependency step="kupu"/>
+  <!-- try to cover all possible steps so that the types are installed before this is called -->
+  <dependency step="archtypetool"/>
+  <dependency step="atcttool"/>
+  <dependency step="componentregistry"/>
+  <dependency step="archetypes-various"/>
+  <dependency step="plone-archetypes"/>
+  <dependency step="typeinfo"/>
+  <dependency step="content"/>
+  <dependency step="plone-content"/>
+  
+ </import-step>
+</import-steps>

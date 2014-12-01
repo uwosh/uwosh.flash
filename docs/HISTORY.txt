@@ -1,0 +1,94 @@
+Changelog
+=========
+
+0.8 (2011-04-29)
+----------------
+
+* Support for Plone 4.0.x
+
+
+0.7.1 (2010-12-09)
+------------------
+
+* fixed reindex call during install so it looks for
+  portal_type="Multimedia" instead of type_name="Multimedia", and
+  traps and logs exceptions that occur in the calls to reindexObject()
+
+
+0.7
+---
+
+* Updated to flowplayer 3.2.1
+
+* fixed problem where flowplayer wouldn't work in IE
+  in certain situations.
+
+* can now specify to use the first frame as a splash image
+  in the content definition.
+
+
+0.7rc3 ~ March 1, 2010
+----------------------
+
+* update allowed content types since web server
+  sometimes handles flvs differently
+  [Nathan Van Gheem]
+
+* handle application/octet-stream content type 
+  since we're getting some weird issues with 
+  content being uploaded that way.
+  [Nathan Van Gheem]
+
+* added some doctests
+  [Nathan Van Gheem]
+
+
+0.7rc2 ~ February 25, 2010
+--------------------------
+
+* removed weird dependency installation issue.
+  [Nathan Van Gheem]
+
+* using metadata.xml correctly
+  [Nathan Van Gheem]
+
+* handling dependencies with GS
+  [Nathan Van Gheem]
+
+* adds zcml autoinclude entry point so you don't need to 
+  specify zcml section in compatible plone versions 
+  [Nathan Van Gheem]
+
+* fixed error from occurring on ftp of flash video
+  [Nathan Van Gheem]
+
+* fall back to default width and height of flash elements
+  [Nathan Van Gheem]
+  
+* added support for playing MP3s
+  [Nathan Van Gheem]
+  
+* added a default width and height settings
+  [Nathan Van Gheem]
+  
+* use content types, not file extension to determine if file
+  is the correct type
+  [Nathan Van Gheem]
+  
+* Updated to version 3.1.3 of flowplayer
+  [Nathan Van Gheem]
+  
+
+0.7rc1
+====================
+*allows you to specify background image of video/swf
+
+0.6.3b1
+====================
+*fixed bug where if the multimedia id had a "." in it, it wouldn't create the flash
+
+1.0
+----------------
+*initial release
+
+

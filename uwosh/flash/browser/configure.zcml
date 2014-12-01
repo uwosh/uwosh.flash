@@ -1,0 +1,65 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser">
+
+  	<browser:page
+      	name="multimedia_view"
+      	for="uwosh.flash.content.interfaces.IMultimedia"
+      	class=".multimedia.View"
+      	permission="zope2.View"
+      />
+    <browser:page
+      	name="stream"
+      	for="uwosh.flash.content.interfaces.IMultimedia"
+      	class=".multimedia.Stream"
+      	permission="zope2.View"
+      />
+    <browser:page
+      	name="download.swf"
+      	for="uwosh.flash.content.interfaces.IMultimedia"
+      	class=".multimedia.DownloadMedia"
+      	permission="zope2.View"
+      />
+    <browser:page
+    	name="download.flv"
+    	for="uwosh.flash.content.interfaces.IMultimedia"
+    	class=".multimedia.DownloadMedia"
+    	permission="zope2.View"
+    />
+    <browser:page
+    	name="download.mp3"
+    	for="uwosh.flash.content.interfaces.IMultimedia"
+    	class=".multimedia.DownloadMedia"
+    	permission="zope2.View"
+    />
+    <browser:page
+    	name="download-media"
+    	for="uwosh.flash.content.interfaces.IMultimedia"
+    	class=".multimedia.DownloadMedia"
+    	permission="zope2.View"
+    />
+    <browser:page
+    	name="flashimage"
+    	for="uwosh.flash.content.interfaces.IMultimedia"
+    	class=".multimedia.FlashImage"
+    	permission="zope2.View"
+    />
+	
+    <browser:resource
+        file="flash.gif"
+        name="flash.png"
+    />
+    <browser:resource
+        file="flashiconsmall.jpg"
+        name="flashiconsmall.jpg"
+    />
+    <browser:resource
+        file="flashimageicon.gif"
+        name="flashimageicon.gif"
+    />
+    <browser:resource
+        file="filmStrip.png"
+        name="filmStrip.png"
+	/>
+	
+</configure>

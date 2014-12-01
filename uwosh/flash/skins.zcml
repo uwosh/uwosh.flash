@@ -1,0 +1,21 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    i18n_domain="uwosh.flash">
+
+   <!-- File System Directory Views registration -->
+	
+   <cmf:registerDirectory 
+			name="uwosh_flash_styles"
+			directory="skins/uwosh_flash_styles" />
+   <cmf:registerDirectory 
+			name="uwosh_flash_flash"
+			directory="skins/uwosh_flash_flash" />
+  <cmf:registerDirectory 
+			name="uwosh_flash_js"
+			directory="skins/uwosh_flash_js" />
+  <cmf:registerDirectory 
+			name="uwosh_flash_templates"
+			directory="skins/uwosh_flash_templates" />
+			
+</configure>

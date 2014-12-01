@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<object name="portal_skins"
+        meta_type="Plone Skins Tool"
+        allow_any="False"
+        cookie_persistence="False"
+        request_varname="plone_skin">
+
+    <object name="uwosh_flash_styles"
+        meta_type="Filesystem Directory View"
+        directory="uwosh.flash:skins/uwosh_flash_styles"
+    />
+
+    <object name="uwosh_flash_flash"
+        meta_type="Filesystem Directory View"
+        directory="uwosh.flash:skins/uwosh_flash_flash"
+    />
+	
+	<object name="uwosh_flash_js"
+	    meta_type="Filesystem Directory View"
+	    directory="uwosh.flash:skins/uwosh_flash_js"
+	/>
+	
+	<object name="uwosh_flash_templates"
+	    meta_type="Filesystem Directory View"
+	    directory="uwosh.flash:skins/uwosh_flash_templates"
+	/>
+	
+    <skin-path name="*">
+	    <layer name="uwosh_flash_styles"    insert-after="custom" />
+	    <layer name="uwosh_flash_flash"     insert-after="uwosh_flash_styles" />
+	    <layer name="uwosh_flash_js"        insert-after="uwosh_flash_flash" />	
+	    <layer name="uwosh_flash_templates" insert-after="uwosh_flash_templates" />
+    </skin-path>
+
+</object>
